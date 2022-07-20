@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerceNavbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #navbar{
+            display: flex;
+            background-color: #2874f0;
+            color: white;
+            /* height: 200px; */
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 50px;
+            /* border-radius: 40px; */
+            font-family: 'Poppins', sans-serif;
+        }
+        #navbar>div:last-child{
+            display: flex;
+            color: white;
+            width: 60%;
+         
+            justify-content: space-between;
+        }
+        h3{
+            cursor: pointer;
+            
+        }
+        h3 img{
+            width: 20%;
+        }
+       a{
+        text-decoration: none;
+         color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <h3><a href="./index.html"></a>MasaiKart</h3>
+        </div>
+       
+        
+        <div>
+               
+            <h3>
+                <form id="search" >
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+            </h3>
+            </form>
+                <h3 id="Men">Men</h3>
+    
+                <h3 id="Women">Women</h3>
+                <h3> <a href="./signin/signin.html">SignIn</a> </h3>
+                <h3> <a href="./signup/signUP.html">signUP</a> </h3>
+                <h3> <a href="./cartPage/cartPage.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></h3>
+        </div>
+       
+    </div>
+    
+</body>
+</html>
+<script>
+    let buttonDataMen=document.querySelector("#Men");
+    buttonDataMen.addEventListener("click",funclikM);
+    let buttonDataWMen=document.querySelector("#Women");
+    buttonDataWMen.addEventListener("click",funclikW);
+
+    function funclikM(){
+      
+        btnObj={};
+        btnObj["gotoPage"]=buttonDataMen.id;
+        localStorage.setItem("buttonData",JSON.stringify(btnObj));
+        window.location.href="./signin/signin.html";
+       
+       
+    }
+    
+    function funclikW(){
+       
+        btnObj={};
+        btnObj["gotoPage"]=buttonDataWMen.id;
+        localStorage.setItem("buttonData",JSON.stringify(btnObj));
+        window.location.href="./signin/signin.html";
+       
+       
+    }
+
+</script>
