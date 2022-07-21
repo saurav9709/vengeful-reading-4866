@@ -1,0 +1,76 @@
+
+body{
+   
+    margin: auto;
+}
+#navbar{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 15% 40% 15%;
+    margin: 30px auto;
+    justify-content: space-between;
+  
+  
+}
+ul,a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+li{
+    cursor: pointer;
+}
+
+#easy{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+   
+}
+.easypara{
+    font-size: 70px;
+    font-weight: bolder;
+    line-height: 1px;
+}
+#easyEmail{
+    padding: 20px;
+    border-radius: 30px;
+    width: 70%;
+}
+#easySignUp{
+    padding: 20px;
+    border-radius: 30px;
+    margin-left: -40px;
+    width: 20%;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+#simplified{
+    font-weight: bold;
+    font-size: 40px;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 50px 50px;
+}
+#simplifiedPara{
+    width: 600px;
+    margin: auto;
+   
+  
+}
+#weMake{
+    width: 90%;
+    margin: 40px auto;
+}
+#weMakeGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
