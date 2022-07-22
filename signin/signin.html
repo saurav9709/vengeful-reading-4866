@@ -164,11 +164,8 @@
     
 
     if(status[0]==true){
-             if(buttonData.gotoPage=="Women"){
-                window.location.href="./../productPage/womens.html";
-            }else{
-                window.location.href="../productPage/mens.html";
-            }
+         window.location.href="../index.html";
+            
 
     }else{ 
  
@@ -194,13 +191,8 @@
             localStorage.setItem("signin",JSON.stringify(data));
             localStorage.setItem("status",JSON.stringify(status));
             alert("Sign in Successful!");
-
-            if(buttonData.gotoPage=="Women"){
-                window.location.href="./../productPage/womens.html";
-            }else{
-                window.location.href="../productPage/mens.html";
-            }
-            
+            window.location.href="../index.html";
+                      
         }else{
             alert("Wrong Username or Password!");
         }
