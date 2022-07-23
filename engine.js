@@ -19,13 +19,18 @@ let login=document.querySelector("#login");
 login.addEventListener("click",loginfun);
 let signup=document.querySelector("#signup");
 signup.addEventListener("click",signupfun);
+signInGreen=document.querySelector("#signInGreen");
+signOutRed=document.querySelector("#signOutRed");
 
 let status=JSON.parse(localStorage.getItem("status"))||[];
-console.log(status[1])
+
 if(status.length>0){
    
     login.innerText=status[1];
     signup.style.display="none";
+    signInGreen.style.display="Inline-block";
+    signOutRed.style.display="Inline-block";
+
     
   }
 
@@ -45,5 +50,12 @@ function signupfun(){
    
    
 }
+
+document.querySelector("#signOutRed").addEventListener("click",function(){
+    status=[];
+    localStorage.setItem("status", JSON.stringify(status));
+    alert("Sign Out Successful!");
+    window.location.href="./index.html";
+  });
 
 

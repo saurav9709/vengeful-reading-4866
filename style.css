@@ -16,6 +16,7 @@ body{
     position: sticky;
     top: 0px;
     background-color: white;
+    z-index: 90;
   
   
 }
@@ -112,14 +113,28 @@ li,button{
     color: #006bff;
 }
 #weMake{
-    width: 90%;
-    margin: 40px auto;
+    width: 85%;
+    margin: 50px auto;
+}
+#weMake h1{
+    text-align: center;
 }
 #weMakeGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    
 }
+#weMakeGrid div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px 30px 40px 20px;
+    border-radius: 10px;
+}
+.fabulous{
+    font-size: 30px;
+    color: #006bff;
+}
+
 li:hover{
     color: #5e96e4;
 }
@@ -129,6 +144,7 @@ li:hover{
     /* width: 50px;  */
     overflow: hidden;
     text-overflow: ellipsis; 
+    display: none;
 }
 
 #signOutRed{
@@ -137,6 +153,7 @@ li:hover{
     /* width: 50px;  */
     overflow: hidden;
     text-overflow: ellipsis; 
+    display: none;
 }
 
 #signInGreen .Hovertext,#signOutRed .Hovertext {
@@ -173,12 +190,11 @@ li:hover{
   
   .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
+    top: 12%;
     right: 10%;
-    /* background-color: #f1f1f1; */
-    /* min-width: 160px; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 100;
   }
   
   /* .dropdown-content a {
@@ -226,18 +242,169 @@ li:hover{
     color: black;
 
 }
-#Grid1ResDrop,#Grid2ResDrop,#Grid3ResDrop{
+#Grid1ResDrop,#Grid2ResDrop,#Grid3ResDrop,#Grid3ProDrop{
     padding: 20px;
 }
 #Grid1ResDrop{
     background-color: #e7edf6;
     border-radius: 10px 0px 0px 10px ;
 }
-#ResourceDrop i {
+/* #ResourceDrop i {
     color: #69c2dd;
     display: inline-block;
     font-size: 30px;
-}
+} */
 
 
 /* --------------------------Drop Resourses---------------------- */
+/* -----------------------Drop Product ------------------------- */
+
+#parent2nddiv{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+#ProductDrop{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 1000px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    gap: 0px;
+    background-color: white;
+    color: black;
+    z-index: 90;
+    display: none;
+
+}
+.dropdown:hover #ProductDrop{
+    display: grid;
+    
+  
+}
+#Grid2ProDrop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* #ProductDrop i {
+    color: #69c2dd;
+    display: inline-block;
+    font-size: 30px;
+} */
+h2, h3, h4{
+    margin-bottom: -10px;
+}
+#divMarqee img{
+    height: 50px;
+    width: auto;
+    padding: 30px;
+    z-index: 1;
+    overflow: hidden;
+    /* position: relative; */
+  }
+  #divMarqee{
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+    
+  }
+  /* ---------------------scheduling section-------------- */
+  #schedule{
+    padding: 40px 0;
+    margin: auto;
+    background-color: #f8f8f8;
+  }
+  #schedule p:nth-child(1){
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color:rgb(29, 52, 75)
+  }
+  #schedulinggrid{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+  }
+  #schedulinggrid div{
+    padding: 20px;
+    
+    border-radius: 10px;
+  }
+  #schedulinggrid div:hover{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  /* -------------------solutions section------------------- */
+
+  #solutions{
+    margin: auto;
+    background-color: #f7faff;
+    padding: 40px 0 60px 0 ;
+  }
+  #solutions p:nth-child(1){
+    color:#006bff;
+    font-size: 16px;
+    text-align: center;
+  }
+  #solutions p:nth-child(1)+p{
+    color:#0b3558;
+    font-size:37.9px;
+    text-align: center;
+    font-weight:600;
+  }
+  #solutionsGrid{
+    margin: auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+  }
+  #solutionsGrid div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+  }
+  #solutionsGrid>div>img{
+    width: 30px;
+  }
+  .LearnMore{
+    font-size:18px;
+    font-weight:600;
+    color:#006bff;
+    position: relative;
+    top: 15px;
+    /* margin-bottom: 20px; */
+  }
+  .LearnMore:hover{
+    color: black;
+  }
+  /* -------------------Do More section----------- */
+  .DoMore{
+    margin: auto;
+    width: 800px;
+    padding: 40px 0;
+    /
+  }
+  .DoMore p:nth-child(1){
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color:rgb(29, 52, 75);
+    margin-bottom: 0px;
+  }
+  .DoMore p:nth-child(2){
+    text-align: center;
+    font-size: 21px;
+    color:rgb(66, 84, 102);
+    
+    /* font-weight: 700; */
+    /* color:rgb(29, 52, 75) */
+  }
