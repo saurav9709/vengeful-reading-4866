@@ -174,7 +174,8 @@
         if(checkEmail(data.email)){
             userData.push(data);
             localStorage.setItem("userData",JSON.stringify(userData));
-            alert("SignUP Successful!");
+            alert("SignUP Successful! Sign in Now!!");
+            window.location.href="../signin/signin.html";
         }else{
             alert("Account Already Exists!");
         }
