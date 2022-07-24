@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://assets-marketing-site.calendly.com/favicon.svg?v=562a6280871383fd65846bc6297cf964" type="image/svg+xml">
     <style>
         *{
             margin: 0px;
@@ -107,7 +108,9 @@
         option{
             border: none;
         }
-    
+        #logo{
+            cursor: pointer;
+        }
 
     </style>
 </head>
@@ -164,7 +167,7 @@
     let status=JSON.parse(localStorage.getItem("status")) ||[];
     
 
-    if(status[0]==true){
+    if(status.length>0){
          window.location.href="../index.html";
             
 
@@ -222,5 +225,7 @@
            }
         }
 
-     
+     document.querySelector("#logo").addEventListener("click",function(){
+        window.location.href="../index.html";
+     });
 </script>
