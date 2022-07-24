@@ -115,11 +115,15 @@ li,button{
 /* ------------------------Menu Icon to X------------------------ */
 #easy{
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 40% 50%;
     justify-content: space-between;
     width: 85%;
     margin: auto;
    
+}
+#easy img{
+    width: 100%;
+    cursor: pointer;
 }
 .easypara{
     font-size: 67.34px;
@@ -192,6 +196,11 @@ li,button{
 .fabulous{
     font-size: 30px;
     color: #006bff;
+}
+.fabulous2{
+  color: #006bff;
+  margin-top: 30px;
+  font-weight: 500;
 }
 
 li:hover{
@@ -468,3 +477,48 @@ h2, h3, h4{
     /* font-weight: 700; */
     /* color:rgb(29, 52, 75) */
   }
+/* ------------------------Workflow------------------- */
+#workflowContainer{
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  justify-content: space-between;
+  gap: 20px;
+  align-content: space-between;
+}
+#workflowContainer img{
+  width: 80%;
+  cursor: pointer;
+  margin-top: -20px;
+}
+#workflowContainer div{
+  display: grid;
+  align-content: space-around;
+}
+
+/* ---------------------------tryCalendly---------------- */
+#tryCalendly{
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7faff;
+}
+#tryCalendly button{
+  background-color: #006bff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  color: white;
+  font-weight: 600px;
+  
+}
+#tryCalendly button:hover{
+  padding: 10px 20px;
+}
+#tryCalendly a{
+  text-decoration: none;
+  color: #006bff;
+  display: inline-block;
+}
