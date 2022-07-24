@@ -1,0 +1,53 @@
+
+
+@media all and (min-width:768px) and (max-width:1023px){
+    .Xcontainer{
+        display: inline-block;
+    }
+    #listMenu{
+        /* display: none; */
+
+    }
+    #listMenu 
+    #navbar{
+        /* grid-template-columns: 1fr 250px 50px; */
+        padding: 0px 0px 0px 20px;
+     
+       
+    }
+    #navbar>div:nth-child(1) img{
+        width: 150px;
+        
+    }
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:767px){
+    .Xcontainer{
+        display: inline-block;
+    }
+    #listMenu{
+        display: none;
+    }
+    #navbar{
+        /* grid-template-columns: 1fr 250px 25px; */
+        padding: 0px 0px 0px 20px;
+        
+    }
+    #navbar>div:nth-child(1) img{
+        width: 150px;
+        
+    }
+
+}
